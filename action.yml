@@ -2,6 +2,11 @@ name: 'Hello World'
 description: 'Egghead - Create a New Github Action with Javascript'
 author: 'Colby Fayock <hello@colbyfayock.com>'
 
+inputs:
+  character:
+    description: 'Futurama character'
+    default: 'dr-zoidberg'
+
 runs:
   using: 'node12'
   main: 'dist/index.js'
