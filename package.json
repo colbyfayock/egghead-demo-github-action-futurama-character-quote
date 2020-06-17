@@ -1,0 +1,17 @@
+{
+  "name": "create-new-github-action-that-logs-hello-world-javascript-nodejs",
+  "version": "1.0.0",
+  "description": "Egghead - Create a New Github Action with Javascript",
+  "author": "Colby Fayock <hello@colbyfayock.com>",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/action.js -o dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bump": "npm version"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.3",
+    "axios": "^0.19.2"
+  }
+}
