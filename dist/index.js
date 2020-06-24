@@ -3482,8 +3482,20 @@ const core = __webpack_require__(470);
 
 const DEFAULT_CHARACTER = 'dr-zoidberg';
 
+const AVAILABLE_CHARACTERS = [
+  'bender',
+  'fry',
+  'leela',
+  'dr-zoidberg'
+];
+
 async function run() {
   const character = core.getInput('character') || DEFAULT_CHARACTER;
+
+  if ( !AVAILABLE_CHARACTERS.includes(character) ) {
+    core.setFailed(`Unknown character: ${character}`)
+    return;
+  }
 
   const response = await axios.get(`https://futuramaapi.herokuapp.com/api/characters/${character}/1`);
   const { data = [] } = response;
