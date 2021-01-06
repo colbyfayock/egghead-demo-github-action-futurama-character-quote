@@ -10,7 +10,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@actions/core": "^1.2.4",
+    "@actions/core": "^1.2.6",
     "@zeit/ncc": "^0.22.3",
     "axios": "^0.19.2"
   }
